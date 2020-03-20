@@ -1,0 +1,12 @@
+$.ajax({
+                type: "POST",
+                url: "https://sanarp.com/Mobiles/getIncidents/0",
+                dataType: "json",
+                success: function (result) {
+                    alert(JSON.stringify(result));  
+                    
+                },
+                error: function (xhr, status, error) {
+                    alert("err");
+                }
+            });
